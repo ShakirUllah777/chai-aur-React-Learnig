@@ -1,9 +1,11 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Chai from "./chai"
+
 
 function App() {
     return (
-    <h1>Chai aur React with Vite</h1>
+    <div>
+      < Chai />
+    </div>
   )
 }
 
