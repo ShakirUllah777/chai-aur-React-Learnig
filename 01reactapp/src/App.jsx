@@ -1,32 +1,35 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-
 function App() {
-  let [counter, setCounter] = useState(15)
-
-  // let counter = 16
+  const [counter, setCounter] = useState(15)
 
   const addValue = () => {
-    console.log('clicked', counter);
-    counter = counter + 1
-    setCounter(counter)
+    if (counter < 20){
+      setCounter(counter + 1)
+    }
   }
-
   const removeValue = () => {
-    setCounter(counter - 1)
+    if (counter > 0){
+      setCounter(counter - 1)
+    }
   }
-  return (
-    <>
-      <h2>Chai aur react | project number 1</h2>
-      <h3>Counter valur : {counter}</h3>
 
-      <button onClick={addValue}>Add Value {counter}  </button>
-      <br />
-      <button onClick={removeValue}>Remove Value {counter} </button>
-    </>
+  return (
+    <div className="app">
+      <h2>☕ Chai aur React | Project 01</h2>
+      <h3>Counter Value: <span>{counter}</span></h3>
+
+      <div className="buttons">
+        <button onClick={addValue} disabled={counter === 20}>
+          ➕ Add
+        </button>
+~
+        <button onClick={removeValue} disabled={counter === 0}>
+          ➖ Remove
+        </button>
+      </div>
+    </div>
   )
 }
 
