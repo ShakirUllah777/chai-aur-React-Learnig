@@ -20,13 +20,12 @@ function App() {
   // setCounter(counter + 1)
   // setCounter(counter + 1)
   // setCounter(counter + 1)
-  // setCounter(counter + 1) -- this will return the just next value
+  // setCounter(counter + 1) ---> this will return the just next value
 
   // if we wnat to retun next 3 values then we will do this 
   // setCounter(counter => counter + 1)
   // setCounter(counter => counter + 1)
-  // setCounter(counter => counter + 1) -- this will return the next 3 values
-
+  // setCounter(counter => counter + 1) ---> this will return the next 3 values
 
   return (
     <div className="app">
